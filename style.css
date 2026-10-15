@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+nav a:hover {
+    color: lightgreen;
+}
+
+#home {
+    background-color: lightgreen;
+    padding: 60px;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 32px;
+}
+
+#home a {
+    display: inline-block;
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#services {
+    padding: 20px;
+}
+
+#services h2 {
+    text-align: center;
+}
+
+.services-container > div {
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+#about p {
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+
+#contact {
+    padding: 20px;
+}
+
+#contact h2, #contact p {
+    text-align: center;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid green;
+}
+
+#contact label, #contact input {
+    display: block;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#contact button {
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: darkgreen;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.services-container {
+    display: flex;
+    gap: 10px;
+}
+
+.services-container > div {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+    nav a {
+        display: inline-block;
+        padding: 10px;
+    }
+    #home {
+        padding: 30px;
+    }
+    #home h2 {
+        font-size: 26px;
+    }
+    #contact form {
+        box-sizing: border-box;
+    }
+}
